@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eng. Ahmad Alzallat | Senior Mechanical Engineer</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .card {
+    text-align: center;
+    background: #2b2b2b;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    width: 90%;
+    max-width: 450px;
+    animation: fadeIn 1.5s ease;
+  }
+  .logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4af37;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+    animation: popIn 1.2s ease;
+  }
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5f5f5;
+  }
+  .title {
+    font-size: 16px;
+    color: #d4af37;
+    margin-bottom: 10px;
+  }
+  .desc {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 25px;
+  }
+  .contact a {
+    display: block;
+    color: #d4af37;
+    text-decoration: none;
+    margin: 8px 0;
+    transition: color 0.3s;
+  }
+  .contact a:hover {
+    color: #fff;
+  }
+  .lang-switch {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #d4af37;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes popIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+</style>
+</head>
+<body>
+
+<div class="lang-switch" onclick="toggleLang()">🇸🇦 / 🇬🇧</div>
+
+<div class="card" id="en">
+  <div class="logo">AA</div>
+  <div class="name">Eng. Ahmad Alzallat</div>
+  <div class="title">Senior Mechanical Engineer</div>
+  <div class="desc">Specialized in HVAC, Firefighting & Plumbing Systems Design</div>
+  <div class="contact">
+    <a href="tel:+966582719062">📞 +966 582 719 062</a>
+    <a href="https://wa.me/966582719062" target="_blank">💬 WhatsApp</a>
+    <a href="https://t.me/ahmadalzallat" target="_blank">✈️ Telegram</a>
+    <a href="mailto:eng.alzallat@gmail.com">📧 eng.alzallat@gmail.com</a>
+  </div>
+</div>
+
+<div class="card" id="ar" style="display:none; direction:rtl;">
+  <div class="logo">AA</div>
+  <div class="name">م. أحمد الزلاط</div>
+  <div class="title">مهندس ميكانيكا أول</div>
+  <div class="desc">متخصص في تصميم أنظمة التكييف والتهوية ومكافحة الحرائق والصرف الصحي</div>
+  <div class="contact">
+    <a href="tel:+966582719062">📞 966582719062+</a>
+    <a href="https://wa.me/966582719062" target="_blank">💬 واتساب</a>
+    <a href="https://t.me/ahmadalzallat" target="_blank">✈️ تيليجرام</a>
+    <a href="mailto:eng.alzallat@gmail.com">📧 eng.alzallat@gmail.com</a>
+  </div>
+</div>
+
+<script>
+function toggleLang() {
+  const en = document.getElementById('en');
+  const ar = document.getElementById('ar');
+  en.style.display = en.style.display === 'none' ? 'block' : 'none';
+  ar.style.display = ar.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+
+</body>
+</html>
